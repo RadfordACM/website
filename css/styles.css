@@ -1,22 +1,23 @@
-/* A little highlight, maybe? */
-/* body { border-left: 0.5rem solid #C72227; } /* nah */
-
-/* Increase font weight on headers */
+/* Override Skeleton's header weights */
 h1, h2, h3, h4, h5, h6 { font-weight: 400; }
+
+/* Override Skeleton's link colors/effects */
+a {
+    color: #C72227;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #91191C;
+    text-decoration: underline;
+}
 
 /* The big box at the top */
 header#page-header {
-    /* background-color: #F9F9F9;
-    border-radius: 1.0rem;
-    padding: 3rem; */
     border-bottom: 2px solid #C72227;
 }
 
-/* The header inside the big box at the top */
-header#page-header > h1 {
-    /* color: #C72227; */
-}
-
+/* Small text below h1 in the page header */
 header#page-header > p#tagline {
     padding: 0;
     margin-top: -2.0rem;
@@ -32,7 +33,7 @@ section.main-section {
     margin: 4.0rem 0;
 }
 
-/* Smaller sections to thr right */
+/* Smaller sections to the right */
 aside > div {
     background-color: #F9F9F9;
     border-radius: 1.0rem;
@@ -41,7 +42,6 @@ aside > div {
 }
 
 /* styling definition lists */
-
 dt {
     font-weight: 600;
     padding-bottom: 0.5rem;
@@ -51,49 +51,59 @@ dd {
     padding-bottom: .5rem;
 }
 
+/* Lists without bullets, like links in the aside */
 ul.no-deco {
     list-style-type: none;
 }
 
+/* Methinks skeleton spaces out list items too much. */
 li {
     margin-bottom: 0.5rem;
 }
 
+/* Indent lists inside the main blurbs */
 section.main-section ul {
     text-indent: 2.0rem;
 }
 
+/* No bullets on news elements */
 div#the-news ul {
     list-style: none;
 }
 
+/* We want the whole li to be the link, so don't highlight the text */
 div#the-news ul li a {
     text-decoration: none;
     color: #222;
 
 }
 
+/* Padding and spacing for the news items */
 div#the-news ul li {
     border-left: 2px solid #F9F9F9;
     padding: 0.5rem 0;
 }
 
+/* Highlight on mouseover to indicate that they're clickable */
 div#the-news ul li:hover {
     border-left: 2px solid #C72227;
     background: #F5F5F5;
 }
 
+/* Pull the li contents together */
 div#the-news ul li h6,
 div#the-news ul li p {
     margin-bottom: 0.3rem;
 }
 
-a {
-    color: #C72227;
-    text-decoration: none;
+/* The page footer */
+footer#page-footer {
+    border-top: 1px solid #D3D3D3;
+    text-align: center;
+    color: #888;
+    padding-top: 1.0rem;
 }
 
-a:hover {
-    color: #91191C;
-    text-decoration: underline;
+footer#page-footer a {
+    color: #555;
 }
