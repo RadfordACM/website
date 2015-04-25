@@ -5,7 +5,7 @@
 h1, h2, h3, h4, h5, h6 { font-weight: 400; }
 
 /* The big box at the top */
-div#the-header {
+header#page-header {
     /* background-color: #F9F9F9;
     border-radius: 1.0rem;
     padding: 3rem; */
@@ -13,11 +13,11 @@ div#the-header {
 }
 
 /* The header inside the big box at the top */
-div#the-header > h1 {
+header#page-header > h1 {
     /* color: #C72227; */
 }
 
-div#the-header > p#tagline {
+header#page-header > p#tagline {
     padding: 0;
     margin-top: -2.0rem;
     margin-bottom: 0.5rem;
@@ -61,6 +61,31 @@ li {
 
 section.main-section ul {
     text-indent: 2.0rem;
+}
+
+div#the-news ul {
+    list-style: none;
+}
+
+div#the-news ul li a {
+    text-decoration: none;
+    color: #222;
+
+}
+
+div#the-news ul li {
+    border-left: 2px solid #F9F9F9;
+    padding: 0.5rem 0;
+}
+
+div#the-news ul li:hover {
+    border-left: 2px solid #C72227;
+    background: #F5F5F5;
+}
+
+div#the-news ul li h6,
+div#the-news ul li p {
+    margin-bottom: 0.3rem;
 }
 
 a {

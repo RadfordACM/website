@@ -47,10 +47,10 @@
     <div style="padding: 1em;">
     </div>
     <div class="row">
-      <div id="the-header">
+      <header id="page-header">
         <h2>Radford University ACM</h2>
         <p id="tagline">...awesome since 198N</p>
-      </div>
+      </header>
     </div>
 
     <div class="row">
@@ -88,10 +88,10 @@
             page on OrgSync / RUInvolved</a> where you can see all the latest news and events.
           </p>
         </section>
-        <section id="recent=news" class="main-section">
-          <h3>Recent news</h3>
-          <p>Todo: parse from OrgSync with JQuery</p>
+        <section id="latest-news" class="main-section">
+          <h3>Latest News</h3>
           <div id="the-news"></div>
+          <p><a href="https://orgsync.com/100117/news_posts">More...</a><p>
         </section>
       </div>
 
@@ -135,19 +135,7 @@
 
   <script src="js/jquery-2.1.3.min.js"></script>
   <script src="js/moment.min.js"></script>
-  <script src="js/jquery.rss.min.js"></script>
-  <script>
-    jQuery(function($) {
-      console.log("jquery says the dom is ready");
-      $('#the-news').rss("https://orgsync.com/100117/news_posts/feed",
-      {
-        limit: 6,
-        outputMode: "json_xml"
-      });
-    })
-
-
-  </script>
+  <script src="js/news-eater.js"></script>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
