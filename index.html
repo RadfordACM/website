@@ -15,12 +15,16 @@
 
   <!-- Font
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"/>
+  <!-- Skeleton's default font:
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"/> -->
+  <!-- Open Sans instead: -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'/>
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css"/>
   <link rel="stylesheet" href="css/skeleton.css"/>
+  <link rel="stylesheet" href="css/styles.css"/>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -40,47 +44,76 @@
       </div>
     </div>
     -->
+    <div style="padding: 1em;">
+    </div>
     <div class="row">
-      <h1>Radford University ACM</h1>
-      <p>...This is the top.  Deliniate and pad liberally.</p>
+      <div id="the-header">
+        <h2>Radford University ACM</h2>
+        <p id="tagline">...awesome since 198N</p>
+      </div>
     </div>
 
     <div class="row">
       <div class="eight columns">
-        <section id="about-acm">
+        <section id="about-acm" class="main-section">
           <h3>About ACM</h3>
-          <p>Other blerghs</p>
+          <p>
+            ACM, the Association for Computing Machinery, is an international scientific and educational organization dedicated
+            to advancing the arts, sciences, and applications of information technology. With a world-wide membership of
+            80,000, ACM functions as a locus for computing professionals and students working in the various fields of
+            Information Technology.
+          </p>
+          <p>
+            Joining the ACM as a student provides access to many benefits. Here are just a few:
+            <ul>
+              <li>Free access to software through the ACM Student Academic Initiative</li>
+              <li>Access to online courses, online books, and webinars</li>
+              <li>Electronic subscription to Communications of the ACM</li>
+              <li>The option to subscribe to the full ACM Digital Library</li>
+            </ul>
+          </p>
+          <p>
+            Fees vary depending on the membership level you purchase, starting at $19. (You may also have access to free
+            student memberships through participation in ICPC or membership in the Upsilon Pi Epsilon honor society.)
+            For more information, including a full list of benefits and membership options, check out <a href="http://www.acm.org/membership/student">http://www.acm.org/membership/student</a>.
+          </p>
         </section>
-        <section id="about-chapter">
+        <section id="about-chapter" class="main-section">
           <h3>Our Chapter</h3>
-          <p>Blerghs</p>
+          <p>
+            The Radford University student chapter of the ACM is for any student interested in computers, programming, or other
+            aspects of information technology.  We focus on organizing events like workshops, tech talks, and video game
+            tournaments.  There are no club dues or formal membership requirements. To get involved, just follow <a href="https://orgsync.com/100117/chapter">our
+            page on OrgSync / RUInvolved</a> where you can see all the latest news and events.
+          </p>
         </section>
-        <section id="recent=news">
+        <section id="recent=news" class="main-section">
           <h3>Recent news</h3>
-          <p>Stuff here</p>
+          <p>Todo: parse from OrgSync with JQuery</p>
         </section>
       </div>
       <div class="four columns">
         <aside>
-          <div id="related-orgs">
-            <h4>Related Organizations</h4>
-            <ul>
-              <li><a href="https://orgsync.com/100128/chapter">Upsilon Pi Epsilon</a></li>
-              <li><a href="https://orgsync.com/100056/chapter">Cyber Defense Club</a></li>
-              <li><a href="http://www.radford.edu/wcc">Women In Computing</a></li>
+          <div id="other-links">
+            <h5>Relevant Links</h4>
+            <ul class="no-deco">
+              <li><a href="http://www.acm.org/">ACM.org</a></li>
+              <li><a href="http://midatl.radford.edu/">ICPC Mid-Atlantic Regionals</a></li>
+              <li><a href="http://www.radford.edu/content/csat/home/itec.html">RU ITEC</a></li>
+              <li><a href="https://orgsync.com/100117/chapter">RU ACM @ OrgSync</a></li>
+              <li><a href="https://www.facebook.com/groups/Radfordacm/">RU ACM @ Facebook</a></li>
             </ul>
           </div>
-          <div id="other-links">
-            <h4>Relevant Links</h4>
-            <ul>
-              <li><a href="http://www.acm.org/">ACM.org</a></li>
-              <li><a href="http://www.radford.edu/content/csat/home/itec.html">RU ITEC</a></li>
-              <li><a href="https://www.facebook.com/groups/Radfordacm/">RU ACM @ Facebook</a></li>
-              <li><a href="https://orgsync.com/100117/chapter">RU ACM @ OrgSync</a></li>
+          <div id="related-orgs">
+            <h5>Related Organizations</h4>
+            <ul class="no-deco">
+              <li><a href="https://orgsync.com/100128/chapter">Upsilon Pi Epsilon</a></li>
+              <li><a href="https://orgsync.com/100056/chapter">Cyber Defense Club</a></li>
+              <li>Women In Computing</li>
             </ul>
           </div>
           <div id="current-officers">
-            <h4>Current Officers</h4>
+            <h5>Current Officers</h4>
             <dl>
               <dt>President</dt>
               <dd>Forrest Meade (<a href="mailto:fmeade@radford.edu">fmeade</a>)</dd>

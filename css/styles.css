@@ -1,0 +1,74 @@
+/* A little highlight, maybe? */
+/* body { border-left: 0.5rem solid #C72227; } /* nah */
+
+/* Increase font weight on headers */
+h1, h2, h3, h4, h5, h6 { font-weight: 400; }
+
+/* The big box at the top */
+div#the-header {
+    /* background-color: #F9F9F9;
+    border-radius: 1.0rem;
+    padding: 3rem; */
+    border-bottom: 2px solid #C72227;
+}
+
+/* The header inside the big box at the top */
+div#the-header > h1 {
+    /* color: #C72227; */
+}
+
+div#the-header > p#tagline {
+    padding: 0;
+    margin-top: -2.0rem;
+    margin-bottom: 0.5rem;
+    text-indent: 1.0rem;
+}
+
+/* main content sections */
+section.main-section {
+    background-color: #F9F9F9;
+    border-radius: 1.0rem;
+    padding: 1.5rem 2.5rem;
+    margin: 4.0rem 0;
+}
+
+/* Smaller sections to thr right */
+aside > div {
+    background-color: #F9F9F9;
+    border-radius: 1.0rem;
+    padding: 1.5rem 2.5rem;
+    margin: 4.0rem 0;
+}
+
+/* styling definition lists */
+
+dt {
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+}
+
+dd {
+    padding-bottom: .5rem;
+}
+
+ul.no-deco {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+section.main-section ul {
+    text-indent: 2.0rem;
+}
+
+a {
+    color: #C72227;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #91191C;
+    text-decoration: underline;
+}
