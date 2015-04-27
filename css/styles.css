@@ -1,6 +1,10 @@
 /* Override Skeleton's header weights */
 h1, h2, h3, h4, h5, h6 { font-weight: 400; }
 
+body {
+    background-color: #F4F4F4;
+}
+
 /* Override Skeleton's link colors/effects */
 a {
     color: #C72227;
@@ -27,7 +31,7 @@ header#page-header > p#tagline {
 
 /* main content sections */
 section.main-section {
-    background-color: #F9F9F9;
+    background-color: #FFF;
     border-radius: 1.0rem;
     padding: 1.5rem 2.5rem;
     margin: 4.0rem 0;
@@ -35,7 +39,7 @@ section.main-section {
 
 /* Smaller sections to the right */
 aside > div {
-    background-color: #F9F9F9;
+    background-color: #FFF;
     border-radius: 1.0rem;
     padding: 1.5rem 2.5rem;
     margin: 4.0rem 0;
@@ -87,7 +91,7 @@ div#the-news ul li {
 /* Highlight on mouseover to indicate that they're clickable */
 div#the-news ul li:hover {
     border-left: 2px solid #C72227;
-    background: #F5F5F5;
+    background: #F9F9F9;
 }
 
 /* Pull the li contents together */
