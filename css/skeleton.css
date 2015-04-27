@@ -49,7 +49,9 @@
 }
 
 /* For devices larger than 550px */
-@media (min-width: 550px) {
+/* @media (min-width: 550px) { */
+/* Change: raise breakpoint */
+@media (min-width: 720px) {
   .container {
     width: 80%; }
   .column,
